@@ -8,6 +8,17 @@ This gives 2 deployment options:
 ## Chatbot Positon in our mock website:
 [Click This ](https://app.uizard.io/p/95868840)
 
+## Basic Commands:
+- 50+ commands
+- Multilingual
+```
+hi
+
+आपका नाम क्या है
+
+கல்லூரி கட்டண விவரம்
+```
+
 ## Initial Setup:
 This repo currently contains the starter files.
 
