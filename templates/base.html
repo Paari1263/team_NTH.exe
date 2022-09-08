@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+  />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <head>
+    <script>
+      let audioIN = { audio: true };
+      navigator.mediaDevices
+        .getUserMedia(audioIN)
+
+        .catch(function (err) {
+          console.log(err.name, err.message);
+        });
+    </script>
+    <meta charset="UTF-8" />
+    <title>Chatbot</title>
+  </head>
+  <body method="POST,GET">
+    <div class="container">
+      <div class="chatbox">
+        <div class="chatbox__support">
+          <div class="chatbox__header">
+            <div class="chatbox__image--header">
+              <img
+                src="{{ url_for('static', filename='images/images.png') }}"
+                alt="image"
+                style="width: 70%; border-radius: 50%"
+              />
+            </div>
+            <div style="padding-right: 3em">
+              <label for="multi-select" style="color: white">Language</label>
+              <div class="select select--multiple">
+                <form>
+                  <select id="multi-select" multiple>
+                    <option name="lang" value="English" selected>
+                      English
+                    </option>
+                    <option name="lang" value="Tamil">Tamil</option>
+                    <option name="lang" value="Hindi">Hindi</option>
+                    <option name="lang" value="Telugu">Telugu</option>
+                    <option name="lang" value="Kannada">Kannada</option>
+                    <option name="lang" value="Malayalam">Malayalam</option>
+                  </select>
+                </form>
+                <span class="focus"></span>
+              </div>
+            </div>
+            <div class="chatbox__content--header">
+              <h3 class="chatbox__heading--header">Chat support</h3>
+              <p class="chatbox__description--header">
+                Hi. My name is Genie. How can I help you?
+              </p>
+            </div>
+          </div>
+          <div class="chatbox__messages">
+            <div></div>
+          </div>
+          <div class="chatbox__footer">
+            <input
+              type="text"
+              placeholder="Write a message..."
+              style="padding-left: 1em"
+            />
+            <button
+              type="submit"
+              class="btn btn-default btn-circle"
+              style="margin-left: 0.75em"
+              name="record_button"
+            >
+              <i class="fa fa-microphone"></i>
+            </button>
+            <button class="chatbox__send--footer send__button">Send</button>
+          </div>
+        </div>
+        <div class="chatbox__button">
+          <button>
+            <img
+              src="{{ url_for('static', filename='images/chatbox-icon.svg') }}"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $SCRIPT_ROOT = {{ request.script_root|tojson }};
+    </script>
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='app.js') }}"
+    ></script>
+    <script>
+      var e = document.getElementById("multi-select");
+      var text = e.options[e.selectedIndex].text;
+      console.log(text);
+    </script>
+  </body>
+</html>

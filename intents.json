@@ -1,0 +1,212 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hey", "Is anyone there?", "Hello", "Hay"],
+      "responses": ["Hello", "Hi", "Hi there"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": ["See you later", "Have a nice day", "Bye! Come back again"]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Thanks for the help"
+      ],
+      "responses": [
+        "Happy to help!",
+        "Any time!",
+        "My pleasure",
+        "You're most welcome!"
+      ]
+    },
+    {
+      "tag": "about",
+      "patterns": ["Who are you?", "What are you?", "Who you are?"],
+      "responses": [
+        "I'm Genie, your bot assistant",
+        "I'm Genie, an Artificial Intelligent bot"
+      ]
+    },
+    {
+      "tag": "name",
+      "patterns": [
+        "what is your name",
+        "what should I call you",
+        "whats your name?",
+        "your name?"
+      ],
+      "responses": [
+        "You can call me Genie.",
+        "I'm Genie!",
+        "Just call me as Genie"
+      ]
+    },
+    {
+      "tag": "help",
+      "patterns": [
+        "Could you help me?",
+        "give me a hand please",
+        "Can you help?",
+        "What can you do for me?",
+        "I need a support",
+        "I need a help",
+        "support me please",
+        "help me please",
+        "help me"
+      ],
+      "responses": [
+        "Tell me how can assist you",
+        "Tell me your problem to assist you",
+        "Yes Sure, How can I support you"
+      ]
+    },
+    {
+      "tag": "createaccount",
+      "patterns": [
+        "I need to create a new account",
+        "how to open a new account",
+        "I want to create an account",
+        "can you create an account for me",
+        "how to open a new account"
+      ],
+      "responses": [
+        "You can just easily create a new account from our web site",
+        "Just go to our web site and follow the guidelines to create a new account"
+      ]
+    },
+    {
+      "tag": "complaint",
+      "patterns": [
+        "have a complaint",
+        "I want to raise a complaint",
+        "there is a complaint about a service",
+        "complaint"
+      ],
+      "responses": [
+        "Please provide us your complaint in order to assist you",
+        "Please mention your complaint, we will reach you and sorry for any inconvenience caused"
+      ]
+    },
+    {
+      "tag": "courses",
+      "patterns": [
+        "what are the courses available in your college ?",
+        "courses available ?"
+      ],
+      "responses": [
+        "B.E courses for CSE, ECE, IT, Mechanical ",
+        "Bachelor degree on Engineering for CSE, ECE, IT, Mechanical"
+      ]
+    },
+    {
+      "tag": "college name",
+      "patterns": [
+        "what is the name of the college ?",
+        "college name ?",
+        "name of the college ?"
+      ],
+      "responses": ["SSN College of Engineering, Chennai "]
+    },
+    {
+      "tag": "location",
+      "patterns": [
+        "where is your college located ?",
+        "what is the location of the college ?",
+        "loaction of your college ?",
+        "location ?"
+      ],
+      "responses": ["Chennai", "Kalavakkam"]
+    },
+    {
+      "tag": "admission time",
+      "patterns": [
+        "when will the college admission happening ?",
+        "what month is the college admission happening ?",
+        "month of college admission",
+        "college admission mode"
+      ],
+      "responses": [
+        "Admission takes place in SSN Campus from May to June through TNEA counselling and Management Quota"
+      ]
+    },
+    {
+      "tag": "eligibility",
+      "patterns": [
+        "what is the eligibiltiy for SSN college admission ?",
+        "eligibility criteria ?"
+      ],
+      "responses": [
+        "He/She who is aspired to get a admission at our college should have completed their 12th board / Diploma"
+      ]
+    },
+    {
+      "tag": "SSN",
+      "patterns": ["SSN"],
+      "responses": [
+        "Yes, that our college name. SSN Institutions, founded by Padma Bhushan Dr. Shiv Nadar, Chairman, HCL Technologies, stand out as a premier center of higher learning. "
+      ]
+    },
+    {
+      "tag": "admission open",
+      "patterns": [
+        "is the admissions open for this academic year?",
+        "is the admissions open ?",
+        "is the admissions for this academic year?"
+      ],
+      "responses": [
+        "Yes, SSN College admissions are open for this academic year 2023."
+      ]
+    },
+    {
+      "tag": "clubs",
+      "patterns": [
+        "what are the co-scholastic clubs in your college?",
+        "clubs in your college ?"
+      ],
+      "responses": [
+        "SSN Film Club, SSN Coding Club, SSN Music Club, SSN Design Club, SSN Photography, SSN Saral Tamil Club, SSN Precisio Racing Club, SSN Gaming Club"
+      ]
+    },
+    {
+      "tag": "fee structure",
+      "patterns": [
+        "what is the fee structure in your college ?",
+        "fee structure ?",
+        "fee details"
+      ],
+      "responses": [
+        "Please contact our SSN College Administration Office, Adyar for more details."
+      ]
+    },
+    {
+      "tag": "mode of payment",
+      "patterns": ["mode of payment in college ?", "mode of payment "],
+      "responses": [
+        "Through Paytm and DD / Cheeque in favour of SSN College of Engineering, Chennai"
+      ]
+    },
+    {
+      "tag": "team name",
+      "patterns": ["your team name ?", "team name"],
+      "responses": [
+        "This is Team NTH.exe from SSN College of Engineering, Chennai"
+      ]
+    },
+    {
+      "tag": "documents",
+      "patterns": [
+        "what are the documents needed for the admission process ?",
+        "documents needed for the admission"
+      ],
+      "responses": [
+        "Adhaar Card, 12th Board Marksheet / Diploma Marksheet, 10th Board Marksheet, School/ Diploma TC"
+      ]
+    }
+  ]
+}
